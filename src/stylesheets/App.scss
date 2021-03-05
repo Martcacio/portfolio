@@ -16,14 +16,14 @@
         justify-content: center;
         text-align: center;
         &--title {
-            color: rgb(53, 53, 53);
+            color: #535353;
             font-size: 45px;
             font-family: $Font-principal;
             margin-bottom: 20px;
             transform: translateY(-600px);
         }
         &--subtitle {
-            color: rgb(53, 53, 53);
+            color: #535353;
             font-size: 35px;
             font-family: $Font-principal;
             transform: translateY(-600px);
@@ -37,18 +37,32 @@
         flex-direction: row;
         &--ux {
             padding: 10px;
-            background-color: #535353;
+            background-color: #ffffff;
             font-size: 25px;
-            color: #ffffff;
+            color: #535353;
             font-family: $Font-principal;
             margin-right: 120px;
+            transition: all 0.2s ease-in-out;
+            border: 5px solid #535353;
+            &:hover {
+                border: 5px solid #535353;
+                color: #ffffff;
+                background-color: #535353;
+            }
         }
         &--front {
             padding: 10px;
-            background-color: #535353;
+            background-color: #ffffff;
             font-size: 25px;
-            color: #ffffff;
+            color: #535353;
             font-family: $Font-principal;
+            transition: all 0.2s ease-in-out;
+            border: 5px solid #535353;
+            &:hover {
+                border: 5px solid #535353;
+                color: #ffffff;
+                background-color: #535353;
+            }
         }
     }
 }

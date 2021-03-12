@@ -1,0 +1,195 @@
+@import './core/variables.scss';
+@import './core/reset.scss';
+* {
+    text-decoration: none
+}
+
+.front {
+    background: $Background-color no-repeat center / cover fixed;
+    width: 100%;
+    height: 100vh;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.front-header {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    margin-left: 22px;
+    &__landing {
+        color: $Borders;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__ux {
+        color: $Borders;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__front {
+        color: white;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__about {
+        color: $Borders;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+}
+
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+    @return $randomNum;
+}
+
+#container {
+    margin-top: 70px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 20%;
+    @media (max-width: 968px) {
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 200px;
+        height: 150px;
+        cursor: pointer;
+        z-index: 0;
+        margin: 20px;
+        &__background {
+            height: 200px;
+        }
+        @media (max-width: 968px) {
+            width: 100%;
+        }
+        .content {
+            font-family: $Font-secundary;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: #fff;
+            transform: rotate(0) scale(1);
+            transition: all .2s cubic-bezier(.28, .05, .65, .97);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+            &__title {
+                font-family: $Font-secundary;
+                font-size: 14px;
+                font-weight: 600;
+                color: $Borders;
+                transform: translateY(-22px);
+                margin-left: 40px;
+                transition: all .3s cubic-bezier(.28, .05, .65, .97);
+            }
+            &:after {
+                position: absolute;
+                bottom: -2px;
+                right: -2px;
+                content: "";
+                width: calc(100% + 4px);
+                height: 4px;
+                border-radius: 0 0 4px 4px;
+                transition: all .3s cubic-bezier(.28, .05, .65, .97);
+            }
+        }
+        .previews {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            &:nth-child(2) {
+                .preview-image {
+                    right: 0;
+                }
+            }
+            .preview-image {
+                width: 150px;
+                height: 100px;
+                transition: all .2s cubic-bezier(.28, .05, .65, .97);
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                overflow: hidden;
+                border-radius: 4px;
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        &:hover {
+            z-index: 5;
+            .content {
+                transform: rotate(0) scale(1.2);
+                animation-delay: .4s;
+                animation: shake .4s 1;
+                box-shadow: -27px 18px 80px 0 rgba(0, 0, 0, 0.3);
+                transition: all .3s cubic-bezier(.28, .05, .65, .97);
+                &:after {
+                    width: 0;
+                    transition: all .3s cubic-bezier(.28, .05, .65, .97);
+                }
+                &__title {
+                    color: white;
+                    transition: all .3s cubic-bezier(.28, .05, .65, .97);
+                }
+            }
+            .previews {
+                .preview-image {
+                    transition: all .2s cubic-bezier(.28, .05, .65, .97);
+                    box-shadow: -8px 5px 30px 0 rgba(0, 0, 0, 0.2);
+                    &:nth-child(1) {
+                        transform:rotate(#{randomNum(-10, 10)}deg) translate(-150px, -100px);
+                        transition-delay: .4s;
+                    }
+                    &:nth-child(2) {
+                        transform:rotate(#{randomNum(-10, 10)}deg) translate(-120px, 0);
+                        transition-delay: .45s;
+                    }
+                    &:nth-child(3) {
+                        transform:rotate(#{randomNum(-10, 10)}deg) translate(-40px, 100px);
+                        transition-delay: .55s;
+                    }
+                    &:nth-child(4) {
+                        transform:rotate(#{randomNum(-10, 10)}deg) translate(130px, 70px);
+                        transition-delay: .5s;
+                    }
+                    &:nth-child(5) {
+                        transform:rotate(#{randomNum(-10, 10)}deg) translate(180px, -40px);
+                        transition-delay: .6s;
+                    }
+                }
+            }
+        }
+        @keyframes shake {
+            0% {
+                transform: rotate(3deg) scale(1.2)
+            }
+            20% {
+                transform: rotate(-3deg) scale(1.2)
+            }
+            40% {
+                transform: rotate(3deg) scale(1.2)
+            }
+            60% {
+                transform: rotate(-3deg) scale(1.2)
+            }
+            80% {
+                transform: rotate(3deg) scale(1.2)
+            }
+            100% {
+                transform: rotate(0) scale(1.2)
+            }
+        }
+    }
+}

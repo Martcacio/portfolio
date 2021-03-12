@@ -1,36 +1,34 @@
 @import './core/variables.scss';
 @import './core/reset.scss';
+.link {
+    text-decoration: none;
+}
+
 .landing {
-    &__image {
-        background: no-repeat center / cover;
-        width: 100%;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        /*  position: fixed;
-         */
-    }
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     &__title {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         &--title {
-            color: #535353;
-            font-size: 45px;
+            color: $Borders;
+            font-size: 30px;
             font-family: $Font-principal;
-            margin-bottom: 20px;
-            transform: translateY(-600px);
+            margin-bottom: 10px;
+            transform: translateY(10px);
         }
         &--subtitle {
-            color: #535353;
+            color: $Borders;
             font-size: 35px;
-            font-family: $Font-principal;
-            transform: translateY(-600px);
+            font-family: $Font-secundary;
+            transform: translateY(10px);
         }
     }
     &__knowledge {
-        transform: translateY(-300px);
+        margin-top: 60px;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -39,30 +37,55 @@
             padding: 10px;
             background-color: #ffffff;
             font-size: 25px;
-            color: #535353;
-            font-family: $Font-principal;
+            color: $Borders;
+            font-family: $Font-secundary;
             margin-right: 120px;
-            transition: all 0.2s ease-in-out;
-            border: 5px solid #535353;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
             &:hover {
-                border: 5px solid #535353;
-                color: #ffffff;
-                background-color: #535353;
+                animation-name: example;
+                animation-duration: 0.25s;
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             }
         }
         &--front {
             padding: 10px;
             background-color: #ffffff;
             font-size: 25px;
-            color: #535353;
-            font-family: $Font-principal;
-            transition: all 0.2s ease-in-out;
-            border: 5px solid #535353;
+            color: $Borders;
+            font-family: $Font-secundary;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
             &:hover {
-                border: 5px solid #535353;
-                color: #ffffff;
-                background-color: #535353;
+                animation-name: example;
+                animation-duration: 0.25s;
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             }
         }
     }
+}
+
+.background__dino {
+    position: relative;
+    overflow: hidden;
+    height: 330px;
+    &--gif {
+        height: 200px;
+        position: absolute;
+        transform: translate(550px, -240px);
+    }
+}
+
+.background__dino img {
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    -webkit-transition: all 1s ease-out;
+    transition: all 2s ease-out;
+}
+
+.background__dino:hover img,
+.background__dino.hover img {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
 }

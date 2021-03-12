@@ -1,0 +1,99 @@
+@import './core/variables.scss';
+@import './core/reset.scss';
+.ux {
+    background: $Background-color no-repeat center / cover fixed;
+    width: 100%;
+    height: 100vh;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ux-header {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    margin-left: 22px;
+    &__landing {
+        color: $Borders;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__ux {
+        color: white;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__front {
+        color: $Borders;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__about {
+        color: $Borders;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+}
+
+.ux-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    &__1 {
+        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        margin: 30px;
+        &--image {
+            height: 273px;
+            width: 350;
+            margin: 10px;
+        }
+        &--gif {
+            position: absolute;
+            height: 170px;
+            transform: translate(-245px, 110px);
+        }
+        &:hover {
+            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+            margin-top: 0;
+        }
+    }
+    &__2 {
+        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        margin: 30px;
+        &--image {
+            height: 273px;
+            width: 350;
+            margin: 10px;
+        }
+        &:hover {
+            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+            margin-top: 0;
+        }
+    }
+    &__3 {
+        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+        margin: 30px;
+        &--image {
+            height: 273px;
+            width: 350;
+            margin: 10px;
+        }
+        &--gif {
+            position: absolute;
+            height: 155px;
+            transform: translate(-335px, 120px);
+        }
+        &:hover {
+            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,257 @@
+@import './core/variables.scss';
+@import './core/reset.scss';
+.about {
+    background: $Borders no-repeat center / cover fixed;
+    width: 100%;
+    height: 100hv;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.about-header {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: flex-end;
+    margin-left: 22px;
+    &__landing {
+        color: $Background-color;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__ux {
+        color: $Background-color;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__front {
+        color: $Background-color;
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+    &__about {
+        color: rgb(31, 31, 31);
+        font-family: $Font-secundary;
+        padding: 20px;
+    }
+}
+
+.photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    margin-top: 100px;
+}
+
+.photo img {
+    width: 400px;
+    height: 480px;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(120%);
+    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+    display: block;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin-top: -10px;
+}
+
+.photo:hover img {
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.photo .glow-wrap {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-top: -10px;
+}
+
+.photo .glow {
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: 200%;
+    background: rgba(255, 255, 255, .2);
+    top: 0;
+    filter: blur(5px);
+    transform: rotate(45deg) translate(-450%, 0);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow {
+    transform: rotate(45deg) translate(450%, 0);
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap {
+    margin-top: 0;
+}
+
+.title {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-85px, -63px);
+    font-family: $Font-secundary;
+    font-weight: 600;
+    font-size: 60px;
+    color: $Background-color;
+}
+
+.subtitle {
+    position: absolute;
+    z-index: 1;
+    transform: translate(370px, 300px);
+    font-family: $Font-secundary;
+    font-weight: 600;
+    font-size: 60px;
+    color: $Background-color;
+    margin: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 600px;
+    margin-bottom: 200px;
+    &__paragraph {
+        text-align: center;
+        font-family: $Font-secundary;
+        font-weight: 600;
+        font-size: 55px;
+        color: white;
+    }
+    &__article {
+        color: white;
+        &--paragraph {
+            margin-left: 500px;
+            width: 400px;
+            font-family: $Font-secundary;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            padding-bottom: 20px;
+        }
+        &--paragraph2 {
+            margin-left: 500px;
+            width: 400px;
+            font-family: $Font-secundary;
+            font-size: 20px;
+            color: white;
+            padding-bottom: 100px;
+        }
+        &--photo1 {
+            filter: grayscale(100%) contrast(120%);
+            transform: translate(300px, 100px);
+            width: 130px;
+        }
+        &--photo2 {
+            filter: grayscale(100%) contrast(120%);
+            transform: translate(70px, 250px);
+            width: 170px;
+        }
+        &--photo3 {
+            filter: grayscale(100%) contrast(120%);
+            transform: translate(930px, -170px);
+            width: 150px;
+        }
+    }
+}
+
+.reviews {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 150px;
+    &__pedro {
+        font-family: $Font-secundary;
+        &--paragraph {
+            width: 400px;
+            margin-bottom: 10px;
+        }
+    }
+    &__pedro-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &--img {
+            filter: grayscale(100%) contrast(120%);
+            width: 30px;
+            margin-right: 10px;
+        }
+        &--name {
+            margin-top: 4px;
+        }
+    }
+}
+
+.contact {
+    margin: 20px;
+    font-family: $Font-secundary;
+    color: white;
+    display: grid;
+    grid-template-columns: 5%, 1fr, 5%;
+    &__mail {
+        margin: auto;
+        grid-column: 2/3;
+        /*     margin-top: 100px; */
+        font-size: 45px;
+    }
+    &__container-icons {
+        grid-column: 3/4;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        align-items: flex-end;
+        &--icons {
+            color: white;
+            transition: color .2s;
+            margin-top: 20px;
+            &:hover {
+                color: rgb(37, 37, 37);
+            }
+        }
+        &--behance {
+            color: white;
+        }
+        &--github {
+            color: white;
+        }
+        &--linkedin {
+            color: white;
+        }
+        &--twitter {
+            color: white;
+        }
+    }
+}
+
+.underlined2 {
+    color: white;
+    flex: 1;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(to right, yellow 0, yellow 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s;
+    &:hover {
+        background-size: 100% 100%;
+    }
+    &--offset {
+        background-position: 0 0.2em;
+        //didn't find another solution than mask the underline shape by a box shadow with the same color than the bg
+        box-shadow: inset 0 -.5em 0 0 $Borders;
+    }
+}

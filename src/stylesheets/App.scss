@@ -16,20 +16,24 @@
         &--title {
             color: $Borders;
             font-family: $Font-principal;
-            font-size: 25px;
+            font-size: 20px;
             margin-bottom: 10px;
             transform: translateY(10px);
-            @media all and (min-width: 768px) {}
+            @media all and (min-width: 768px) {
+                font-size: 25px;
+            }
             @media all and (min-width: 1200px) {
                 font-size: 30px;
             }
         }
         &--subtitle {
             color: $Borders;
-            font-size: 30px;
+            font-size: 25px;
             font-family: $Font-secundary;
             transform: translateY(10px);
-            @media all and (min-width: 768px) {}
+            @media all and (min-width: 768px) {
+                font-size: 30px;
+            }
             @media all and (min-width: 1200px) {
                 font-size: 35px;
             }
@@ -41,14 +45,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media all and (min-width: 768px) {}
         @media all and (min-width: 1200px) {
             flex-direction: row;
         }
         &--ux {
             padding: 10px;
             background-color: #ffffff;
-            font-size: 23px;
+            font-size: 20px;
             color: $Borders;
             margin-bottom: 10px;
             font-family: $Font-secundary;
@@ -70,7 +73,7 @@
         &--front {
             padding: 10px;
             background-color: #ffffff;
-            font-size: 23px;
+            font-size: 20px;
             color: $Borders;
             font-family: $Font-secundary;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -97,6 +100,9 @@
         height: 200px;
         position: absolute;
         transform: translate(100px, -230px);
+        @media all and (min-width: 768px) {
+            transform: translate(340px, -240px);
+        }
         @media all and (min-width: 1200px) {
             transform: translate(550px, -240px);
         }

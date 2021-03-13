@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "../stylesheets/UX.scss";
-import mu from "../images/portada-mu.png";
-import mugif from "../images/mu-unscreen.gif";
-import asos from "../images/portada-asos.png";
-import waggin from "../images/portada-waggin.png";
-import waggingif from "../images/waggin-unscreen.gif";
+import mu from "../images/ux/portada-mu.png";
+import mugif from "../images/ux/mu-unscreen.gif";
+import asos from "../images/ux/portada-asos.png";
+import waggin from "../images/ux/portada-waggin.png";
+import waggingif from "../images/ux/waggin-unscreen.gif";
 
 const UX = () => {
   return (

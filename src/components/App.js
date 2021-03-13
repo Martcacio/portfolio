@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Front from "./Front";
 import UX from "./UX";
 import About from "./About";
-import dinogif from "../images/dino-unscreen.gif";
+import dinogif from "../images/app/dino-unscreen.gif";
 import dino from "../images/fondo-dino1.png";
 import "../stylesheets/App.scss";
 

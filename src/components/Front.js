@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 import "../stylesheets/Front.scss";
-import rm1 from "../images/rm1.png";
-import rm2 from "../images/rm2.png";
-import rm3 from "../images/rm3.png";
-import rm4 from "../images/rm4.png";
-import pokemon from "../images/pokemon.png";
-import PS1 from "../images/PS1.png";
-import PS2 from "../images/PS2.png";
-import PS3 from "../images/PS3.png";
-import PS4 from "../images/PS4.png";
-import PS5 from "../images/PS5.png";
-import s1 from "../images/s1.png";
-import s2 from "../images/s2.png";
-import s3 from "../images/s3.png";
-import folder from "../images/folder.png";
+import rm1 from "../images/front/rm1.png";
+import rm2 from "../images/front/rm2.png";
+import rm3 from "../images/front/rm3.png";
+import rm4 from "../images/front/rm4.png";
+import pokemon from "../images/front/pokemon.png";
+import PS1 from "../images/front/PS1.png";
+import PS2 from "../images/front/PS2.png";
+import PS3 from "../images/front/PS3.png";
+import PS4 from "../images/front/PS4.png";
+import PS5 from "../images/front/PS5.png";
+import s1 from "../images/front/s1.png";
+import s2 from "../images/front/s2.png";
+import s3 from "../images/front/s3.png";
+import folder from "../images/front/folder.png";
 
 const Front = () => {
   return (

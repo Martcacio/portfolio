@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "../stylesheets/About.scss";
-import marta from "../images/marta.jpg";
-import pedro from "../images/pedro.png";
-import pausa from "../images/pausa.jpeg";
+import marta from "../images/about/marta.jpg";
+import pedro from "../images/about/pedro.png";
+import pausa from "../images/about/pausa.jpeg";
 import cantabria from "../images/cantabria.jpg";
-import grecia from "../images/grecia.jpg";
+import grecia from "../images/about/grecia.jpg";
 
 const About = () => {
   return (

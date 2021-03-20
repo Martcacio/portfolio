@@ -45,7 +45,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        @media all and (min-width: 1200px) {
+        @media all and (min-width: 768px) {
             flex-direction: row;
         }
         &--ux {
@@ -58,6 +58,8 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             @media all and (min-width: 768px) {
                 font-size: 25px;
+                margin-bottom: 0px;
+                margin-right: 10px;
             }
             @media all and (min-width: 1200px) {
                 margin-right: 120px;
@@ -79,6 +81,7 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             @media all and (min-width: 768px) {
                 font-size: 25px;
+                margin-left: 10px;
             }
             @media all and (min-width: 1200px) {
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -95,17 +98,20 @@
 .background__dino {
     position: relative;
     overflow: hidden;
-    height: 330px;
+    height: 230px;
+    @media all and (min-width: 768px) {
+        height: 330px;
+    }
     &--gif {
-        height: 200px;
+        height: 140px;
         position: absolute;
-        transform: translate(100px, -230px);
+        transform: translate(100px, -160px);
         @media all and (min-width: 768px) {
-            transform: translate(340px, -240px);
+            height: 200px;
+            transform: translateY(-220px);
+            margin-left: 50px;
         }
-        @media all and (min-width: 1200px) {
-            transform: translate(550px, -240px);
-        }
+        @media all and (min-width: 1200px) {}
     }
 }
 

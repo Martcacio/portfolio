@@ -22,7 +22,7 @@
             @media all and (min-width: 768px) {
                 font-size: 25px;
             }
-            @media all and (min-width: 1200px) {
+            @media all and (min-width: 1024px) {
                 font-size: 30px;
             }
         }
@@ -34,7 +34,7 @@
             @media all and (min-width: 768px) {
                 font-size: 30px;
             }
-            @media all and (min-width: 1200px) {
+            @media all and (min-width: 1024px) {
                 font-size: 35px;
             }
         }
@@ -61,7 +61,7 @@
                 margin-bottom: 0px;
                 margin-right: 10px;
             }
-            @media all and (min-width: 1200px) {
+            @media all and (min-width: 1024px) {
                 margin-right: 120px;
                 margin-bottom: 0px;
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -83,7 +83,7 @@
                 font-size: 25px;
                 margin-left: 10px;
             }
-            @media all and (min-width: 1200px) {
+            @media all and (min-width: 1024px) {
                 transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
                 &:hover {
                     animation-name: example;
@@ -111,7 +111,6 @@
             transform: translateY(-220px);
             margin-left: 50px;
         }
-        @media all and (min-width: 1200px) {}
     }
 }
 

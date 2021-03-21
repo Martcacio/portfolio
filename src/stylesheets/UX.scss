@@ -49,14 +49,14 @@
         transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
         margin: 30px;
         &--image {
-            height: 273px;
-            width: 350;
+            height: 213px;
+            width: 190;
             margin: 10px;
         }
         &--gif {
             position: absolute;
-            height: 170px;
-            transform: translate(-245px, 110px);
+            height: 130px;
+            transform: translate(-194px, 90px);
         }
         &:hover {
             box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
@@ -68,8 +68,8 @@
         transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
         margin: 30px;
         &--image {
-            height: 273px;
-            width: 350;
+            height: 213px;
+            width: 190;
             margin: 10px;
         }
         &:hover {
@@ -82,14 +82,14 @@
         transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
         margin: 30px;
         &--image {
-            height: 273px;
-            width: 350;
+            height: 213px;
+            width: 190;
             margin: 10px;
         }
         &--gif {
             position: absolute;
-            height: 155px;
-            transform: translate(-335px, 120px);
+            height: 125px;
+            transform: translate(-265px, 90px);
         }
         &:hover {
             box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);

@@ -50,7 +50,7 @@
     transform: translate(-50%, -50%);
     display: block;
     @media all and (min-width: 768px) {
-        /* margin-top: 70px; */
+        top: 30%;
     }
     @media all and (min-width: 1024px) {
         top: 50%;
@@ -59,8 +59,8 @@
 }
 
 .photo img {
-    width: 300px;
-    height: 380px;
+    width: 320px;
+    height: 300px;
     object-fit: cover;
     filter: grayscale(100%) contrast(120%);
     box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
@@ -113,7 +113,7 @@
 .title {
     position: absolute;
     z-index: -1;
-    transform: translate(-25px, -50px);
+    transform: translate(-15px, -50px);
     font-family: $Font-secundary;
     font-weight: 600;
     font-size: 40px;
@@ -128,14 +128,13 @@
 .subtitle {
     position: absolute;
     z-index: 1;
-    transform: translate(50px, 390px);
+    transform: translate(55px, 300px);
     font-family: $Font-secundary;
     font-weight: 600;
     font-size: 40px;
     color: $Background-color;
     margin: 0;
     @media all and (min-width: 768px) {
-        transform: translate(150px, 370px);
         font-size: 60px;
     }
     @media all and (min-width: 1024px) {
@@ -226,7 +225,7 @@
         }
         &--photo3 {
             filter: grayscale(100%) contrast(120%);
-            margin-left: 80%;
+            margin-left: 70%;
             width: 90px;
             padding-bottom: 40px;
             @media all and (min-width: 768px) {

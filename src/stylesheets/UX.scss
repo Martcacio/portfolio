@@ -61,12 +61,6 @@
         transform: rotate(-90deg) translateX(-3px);
     }
     
-    .close {
-        display: none;
-    }
-    
-    .open {}
-    
     .burger {
         display: flex;
         flex-direction: column;
@@ -76,26 +70,30 @@
             display: none;
         }
         &__landing {
-            border-top: $Borders 1px solid;
-            border-bottom: $Borders 1px solid;
+            border-top: $Borders 3px solid;
+            border-bottom: $Borders 3px solid;
             color: $Borders;
             font-family: $Font-secundary;
         }
         &__ux {
-            border-bottom: $Borders 1px solid;
+            border-bottom: $Borders 3px solid;
             color: white;
             font-family: $Font-secundary;
         }
         &__front {
-            border-bottom: $Borders 1px solid;
+            border-bottom: $Borders 3px solid;
             color: $Borders;
             font-family: $Font-secundary;
         }
         &__about {
-            border-bottom: $Borders 1px solid;
+            border-bottom: $Borders 3px solid;
             color: $Borders;
             font-family: $Font-secundary;
         }
+    }
+    
+    .close {
+        display: none;
     }
     
     .ux-header {

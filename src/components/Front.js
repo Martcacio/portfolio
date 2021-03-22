@@ -20,17 +20,35 @@ const Front = () => {
   const [top, setTop] = useState("");
   const [middle, setMiddle] = useState("");
   const [bottom, setBottom] = useState("");
+  const [collapsable, setCollapsable] = useState("close");
   const handleChange = () => {
     !top ? setTop("top") : setTop("");
     !bottom ? setBottom("bottom") : setBottom("");
     !middle ? setMiddle("middle") : setMiddle("");
+    !collapsable ? setCollapsable("close") : setCollapsable("");
   };
   return (
     <div className="front">
-      <div class={`wrapper-menu ${middle}`} onClick={handleChange}>
-        <div class={`line-menu half start ${top}`}></div>
-        <div class="line-menu"></div>
-        <div class={`line-menu half end ${bottom}`}></div>
+      <div onClick={handleChange}>
+        <div class={`wrapper-menu ${middle}`} onClick={handleChange}>
+          <div class={`line-menu half start ${top}`}></div>
+          <div class="line-menu"></div>
+          <div class={`line-menu half end ${bottom}`}></div>
+        </div>
+        <div className={`burger-front ${collapsable}`}>
+          <Link to="/" className="link burger-front__landing">
+            <span className=""> Landing </span>
+          </Link>
+          <Link to="/UX/" className="link burger-front__ux">
+            <span className=""> UX / UI </span>
+          </Link>
+          <Link to="/Front/" className="link burger-front__front">
+            <span className=" "> Front - end </span>
+          </Link>
+          <Link to="/About/" className="link burger-front__about">
+            <span className=""> About me </span>
+          </Link>
+        </div>
       </div>
       <header className="front-header">
         <Link to="/" className="link">

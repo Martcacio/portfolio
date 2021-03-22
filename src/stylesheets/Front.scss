@@ -17,6 +17,41 @@
     }
 }
 
+.burger-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    @media all and (min-width: 768px) {
+        display: none;
+    }
+    &__landing {
+        border-top: $Borders 3px solid;
+        border-bottom: $Borders 3px solid;
+        color: $Borders;
+        font-family: $Font-secundary;
+    }
+    &__ux {
+        border-bottom: $Borders 3px solid;
+        color: $Borders;
+        font-family: $Font-secundary;
+    }
+    &__front {
+        border-bottom: $Borders 3px solid;
+        color: white;
+        font-family: $Font-secundary;
+    }
+    &__about {
+        border-bottom: $Borders 3px solid;
+        color: $Borders;
+        font-family: $Font-secundary;
+    }
+}
+
+.close {
+    display: none;
+}
+
 .wrapper-menu {
     width: 30px;
     height: 30px;

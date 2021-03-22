@@ -11,34 +11,36 @@ const UX = () => {
   const [top, setTop] = useState("");
   const [middle, setMiddle] = useState("");
   const [bottom, setBottom] = useState("");
-  const [open, setOpen] = useState("");
+  const [collapsable, setCollapsable] = useState("close");
   const handleChange = () => {
     !top ? setTop("top") : setTop("");
     !bottom ? setBottom("bottom") : setBottom("");
     !middle ? setMiddle("middle") : setMiddle("");
-    open ? setOpen("") : setOpen("");
+    !collapsable ? setCollapsable("close") : setCollapsable("");
   };
 
   return (
     <div className="ux">
-      <div class={`wrapper-menu ${middle}`} onClick={handleChange}>
-        <div class={`line-menu half start ${top}`}></div>
-        <div class="line-menu"></div>
-        <div class={`line-menu half end ${bottom}`}></div>
-      </div>
-      <div className="burger">
-        <Link to="/" className="link burger__landing">
-          <span className=""> Landing </span>
-        </Link>
-        <Link to="/UX/" className="link burger__ux">
-          <span className=""> UX / UI </span>
-        </Link>
-        <Link to="/Front/" className="link burger__front">
-          <span className=" "> Front - end </span>
-        </Link>
-        <Link to="/About/" className="link burger__about">
-          <span className=""> About me </span>
-        </Link>
+      <div onClick={handleChange}>
+        <div className={`wrapper-menu ${middle}`}>
+          <div className={`line-menu half start ${top}`}></div>
+          <div className="line-menu"></div>
+          <div className={`line-menu half end ${bottom}`}></div>
+        </div>
+        <div className={`burger ${collapsable}`}>
+          <Link to="/" className="link burger__landing">
+            <span className=""> Landing </span>
+          </Link>
+          <Link to="/UX/" className="link burger__ux">
+            <span className=""> UX / UI </span>
+          </Link>
+          <Link to="/Front/" className="link burger__front">
+            <span className=" "> Front - end </span>
+          </Link>
+          <Link to="/About/" className="link burger__about">
+            <span className=""> About me </span>
+          </Link>
+        </div>
       </div>
       <header className="ux-header">
         <Link to="/" className="link">

@@ -1,108 +1,156 @@
-@import './core/variables.scss';
-@import './core/reset.scss';
-.ux {
-    background: $Background-color;
-    width: 100%;
-    text-decoration: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    @media all and (min-width: 768px) {
-        background: $Background-color no-repeat center / cover fixed;
-        height: 100vh;
-    }
-}
-
-.ux-header {
-    height: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    margin-left: 22px;
-    &__landing {
-        color: $Borders;
-        font-family: $Font-secundary;
-        padding: 20px;
-    }
-    &__ux {
-        color: white;
-        font-family: $Font-secundary;
-        padding: 20px;
-    }
-    &__front {
-        color: $Borders;
-        font-family: $Font-secundary;
-        padding: 20px;
-    }
-    &__about {
-        color: $Borders;
-        font-family: $Font-secundary;
-        padding: 20px;
-    }
-}
-
-.ux-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media all and (min-width: 768px) {
-        margin-top: 50px;
-    }
-    @media all and (min-width: 1024px) {
-        margin-top: 100px;
-        flex-direction: row;
-    }
-    &__1 {
-        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
-        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-        margin: 30px;
-        &--image {
-            height: 213px;
-            width: 190;
-            margin: 10px;
-        }
-        &--gif {
-            position: absolute;
-            height: 130px;
-            transform: translate(-194px, 90px);
-        }
-        &:hover {
-            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
-            margin-top: 0;
+    @import './core/variables.scss';
+    @import './core/reset.scss';
+    .ux {
+        background: $Background-color;
+        width: 100%;
+        text-decoration: none;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        @media all and (min-width: 768px) {
+            background: $Background-color no-repeat center / cover fixed;
+            height: 100vh;
         }
     }
-    &__2 {
-        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
-        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-        margin: 30px;
-        &--image {
-            height: 213px;
-            width: 190;
-            margin: 10px;
+    
+    .wrapper-menu {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: transform 330ms ease-out;
+    }
+    
+    .line-menu {
+        background-color: $Borders;
+        border-radius: 5px;
+        width: 100%;
+        height: 6px;
+    }
+    
+    .half {
+        width: 50%;
+    }
+    
+    .start {
+        transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+        transform-origin: right;
+    }
+    
+    .top {
+        transform: rotate(-90deg) translateX(3px);
+    }
+    
+    .middle {
+        transform: rotate(-45deg);
+    }
+    
+    .end {
+        align-self: flex-end;
+        transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+        transform-origin: left;
+    }
+    
+    .bottom {
+        transform: rotate(-90deg) translateX(-3px);
+    }
+    
+    .ux-header {
+        height: 35px;
+        display: none;
+        margin-left: 22px;
+        @media all and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: flex-end;
         }
-        &:hover {
-            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
-            margin-top: 0;
+        &__landing {
+            color: $Borders;
+            font-family: $Font-secundary;
+            padding: 20px;
+        }
+        &__ux {
+            color: white;
+            font-family: $Font-secundary;
+            padding: 20px;
+        }
+        &__front {
+            color: $Borders;
+            font-family: $Font-secundary;
+            padding: 20px;
+        }
+        &__about {
+            color: $Borders;
+            font-family: $Font-secundary;
+            padding: 20px;
         }
     }
-    &__3 {
-        box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
-        transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
-        margin: 30px;
-        &--image {
-            height: 213px;
-            width: 190;
-            margin: 10px;
+    
+    .ux-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media all and (min-width: 768px) {
+            margin-top: 50px;
         }
-        &--gif {
-            position: absolute;
-            height: 125px;
-            transform: translate(-265px, 90px);
+        @media all and (min-width: 1024px) {
+            margin-top: 100px;
+            flex-direction: row;
         }
-        &:hover {
-            box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
-            margin-top: 0;
+        &__1 {
+            box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+            transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            margin: 30px;
+            &--image {
+                height: 213px;
+                width: 190;
+                margin: 10px;
+            }
+            &--gif {
+                position: absolute;
+                height: 130px;
+                transform: translate(-194px, 90px);
+            }
+            &:hover {
+                box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+                margin-top: 0;
+            }
+        }
+        &__2 {
+            box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+            transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            margin: 30px;
+            &--image {
+                height: 213px;
+                width: 190;
+                margin: 10px;
+            }
+            &:hover {
+                box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+                margin-top: 0;
+            }
+        }
+        &__3 {
+            box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+            transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            margin: 30px;
+            &--image {
+                height: 213px;
+                width: 190;
+                margin: 10px;
+            }
+            &--gif {
+                position: absolute;
+                height: 125px;
+                transform: translate(-265px, 90px);
+            }
+            &:hover {
+                box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+                margin-top: 0;
+            }
         }
     }
-}

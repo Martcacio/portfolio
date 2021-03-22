@@ -18,11 +18,14 @@
 
 .front-header {
     height: 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
+    display: none;
     margin-left: 22px;
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+    }
     &__landing {
         color: $Borders;
         font-family: $Font-secundary;

@@ -5,10 +5,25 @@ import mugif from "../images/ux/mu-unscreen.gif";
 import asos from "../images/ux/portada-asos.png";
 import waggin from "../images/ux/portada-waggin.png";
 import waggingif from "../images/ux/waggin-unscreen.gif";
+import React, { useState } from "react";
 
 const UX = () => {
+  const [top, setTop] = useState("");
+  const [middle, setMiddle] = useState("");
+  const [bottom, setBottom] = useState("");
+  const handleChange = () => {
+    !top ? setTop("top") : setTop("");
+    !bottom ? setBottom("bottom") : setBottom("");
+    !middle ? setMiddle("middle") : setMiddle("");
+  };
+
   return (
     <div className="ux">
+      <div class={`wrapper-menu ${middle}`} onClick={handleChange}>
+        <div class={`line-menu half start ${top}`}></div>
+        <div class="line-menu"></div>
+        <div class={`line-menu half end ${bottom}`}></div>
+      </div>
       <header className="ux-header">
         <Link to="/" className="link">
           <span className="ux-header__landing"> Landing </span>

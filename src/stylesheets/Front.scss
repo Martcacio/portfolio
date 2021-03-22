@@ -183,14 +183,16 @@
                 }
             }
             &:after {
-                position: absolute;
-                bottom: -2px;
-                right: -2px;
-                content: "";
-                width: calc(100% + 4px);
-                height: 4px;
-                border-radius: 0 0 4px 4px;
-                transition: all .3s cubic-bezier(.28, .05, .65, .97);
+                @media all and (min-width: 1024px) {
+                    position: absolute;
+                    bottom: -2px;
+                    right: -2px;
+                    content: "";
+                    width: calc(100% + 4px);
+                    height: 4px;
+                    border-radius: 0 0 4px 4px;
+                    transition: all .3s cubic-bezier(.28, .05, .65, .97);
+                }
             }
         }
         .previews {
@@ -199,9 +201,11 @@
             left: 0;
             margin-left: 3px;
             z-index: -1;
-            &:nth-child(2) {
-                .preview-image {
-                    right: 0;
+            @media all and (min-width: 1024px) {
+                &:nth-child(2) {
+                    .preview-image {
+                        right: 0;
+                    }
                 }
             }
             .preview-image {
@@ -237,28 +241,30 @@
                 }
             }
             .previews {
-                .preview-image {
-                    transition: all .2s cubic-bezier(.28, .05, .65, .97);
-                    box-shadow: -8px 5px 30px 0 rgba(0, 0, 0, 0.2);
-                    &:nth-child(1) {
-                        transform:rotate(#{randomNum(-10, 10)}deg) translate(-160px, -140px);
-                        transition-delay: .4s;
-                    }
-                    &:nth-child(2) {
-                        transform:rotate(#{randomNum(-10, 10)}deg) translate(-130px, 0);
-                        transition-delay: .45s;
-                    }
-                    &:nth-child(3) {
-                        transform:rotate(#{randomNum(-10, 10)}deg) translate(-60px, 110px);
-                        transition-delay: .55s;
-                    }
-                    &:nth-child(4) {
-                        transform:rotate(#{randomNum(-10, 10)}deg) translate(140px, 80px);
-                        transition-delay: .5s;
-                    }
-                    &:nth-child(5) {
-                        transform:rotate(#{randomNum(-10, 10)}deg) translate(190px, -60px);
-                        transition-delay: .6s;
+                @media all and (min-width: 1024px) {
+                    .preview-image {
+                        transition: all .2s cubic-bezier(.28, .05, .65, .97);
+                        box-shadow: -8px 5px 30px 0 rgba(0, 0, 0, 0.2);
+                        &:nth-child(1) {
+                            transform:rotate(#{randomNum(-10, 10)}deg) translate(-160px, -140px);
+                            transition-delay: .4s;
+                        }
+                        &:nth-child(2) {
+                            transform:rotate(#{randomNum(-10, 10)}deg) translate(-130px, 0);
+                            transition-delay: .45s;
+                        }
+                        &:nth-child(3) {
+                            transform:rotate(#{randomNum(-10, 10)}deg) translate(-60px, 110px);
+                            transition-delay: .55s;
+                        }
+                        &:nth-child(4) {
+                            transform:rotate(#{randomNum(-10, 10)}deg) translate(140px, 80px);
+                            transition-delay: .5s;
+                        }
+                        &:nth-child(5) {
+                            transform:rotate(#{randomNum(-10, 10)}deg) translate(190px, -60px);
+                            transition-delay: .6s;
+                        }
                     }
                 }
             }

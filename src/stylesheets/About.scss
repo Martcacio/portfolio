@@ -139,12 +139,14 @@
     top: 37%;
     margin-top: 100px;
     display: block;
+    margin-left: 20%;
+    left: 30%;
     @media all and (min-width: 768px) {
         position: absolute;
-        left: 50%;
         transform: translate(-50%, -50%);
         top: 30%;
         margin-top: 30px;
+        margin-left: 20%;
     }
     @media all and (min-width: 1024px) {
         top: 50%;
@@ -231,10 +233,12 @@
     font-family: $Font-secundary;
     font-weight: 600;
     font-size: 40px;
+    width: 300px;
     color: $Background-color;
     margin: 0;
     @media all and (min-width: 768px) {
         font-size: 60px;
+        width: 500px;
     }
     @media all and (min-width: 1024px) {
         transform: translate(370px, 300px);

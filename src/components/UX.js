@@ -11,10 +11,12 @@ const UX = () => {
   const [top, setTop] = useState("");
   const [middle, setMiddle] = useState("");
   const [bottom, setBottom] = useState("");
+  const [open, setOpen] = useState("");
   const handleChange = () => {
     !top ? setTop("top") : setTop("");
     !bottom ? setBottom("bottom") : setBottom("");
     !middle ? setMiddle("middle") : setMiddle("");
+    open ? setOpen("") : setOpen("");
   };
 
   return (
@@ -23,6 +25,20 @@ const UX = () => {
         <div class={`line-menu half start ${top}`}></div>
         <div class="line-menu"></div>
         <div class={`line-menu half end ${bottom}`}></div>
+      </div>
+      <div className="burger">
+        <Link to="/" className="link burger__landing">
+          <span className=""> Landing </span>
+        </Link>
+        <Link to="/UX/" className="link burger__ux">
+          <span className=""> UX / UI </span>
+        </Link>
+        <Link to="/Front/" className="link burger__front">
+          <span className=" "> Front - end </span>
+        </Link>
+        <Link to="/About/" className="link burger__about">
+          <span className=""> About me </span>
+        </Link>
       </div>
       <header className="ux-header">
         <Link to="/" className="link">

@@ -136,21 +136,19 @@
 }
 
 .photo {
-    top: 37%;
     margin-top: 100px;
+    margin-left: 15%;
     display: block;
-    margin-left: 10%;
-    left: 30%;
     @media all and (min-width: 768px) {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 30%;
-        margin-top: 30px;
-        margin-left: 20%;
+        top: 50%;
+        margin-top: 70px;
+        margin-left: 50%;
     }
     @media all and (min-width: 1024px) {
-        top: 50%;
-        margin-top: 100px;
+        margin-top: 200px;
+        margin-left: 33%;
     }
 }
 

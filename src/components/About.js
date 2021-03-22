@@ -5,10 +5,24 @@ import pedro from "../images/about/pedro.png";
 import pausa from "../images/about/pausa.jpeg";
 import cantabria from "../images/cantabria.jpg";
 import grecia from "../images/about/grecia.jpg";
+import React, { useState } from "react";
 
 const About = () => {
+  const [top, setTop] = useState("");
+  const [middle, setMiddle] = useState("");
+  const [bottom, setBottom] = useState("");
+  const handleChange = () => {
+    !top ? setTop("top") : setTop("");
+    !bottom ? setBottom("bottom") : setBottom("");
+    !middle ? setMiddle("middle") : setMiddle("");
+  };
   return (
     <div className="about">
+      <div class={`wrapper-menu ${middle}`} onClick={handleChange}>
+        <div class={`line-menu half start ${top}`}></div>
+        <div class="line-menu"></div>
+        <div class={`line-menu half end ${bottom}`}></div>
+      </div>
       <header className="about-header">
         <Link to="/" className="link">
           <span className="about-header__landing"> Landing </span>

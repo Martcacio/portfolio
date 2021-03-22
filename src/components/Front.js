@@ -14,10 +14,24 @@ import s1 from "../images/front/s1.png";
 import s2 from "../images/front/s2.png";
 import s3 from "../images/front/s3.png";
 import folder from "../images/front/folder.png";
+import React, { useState } from "react";
 
 const Front = () => {
+  const [top, setTop] = useState("");
+  const [middle, setMiddle] = useState("");
+  const [bottom, setBottom] = useState("");
+  const handleChange = () => {
+    !top ? setTop("top") : setTop("");
+    !bottom ? setBottom("bottom") : setBottom("");
+    !middle ? setMiddle("middle") : setMiddle("");
+  };
   return (
     <div className="front">
+      <div class={`wrapper-menu ${middle}`} onClick={handleChange}>
+        <div class={`line-menu half start ${top}`}></div>
+        <div class="line-menu"></div>
+        <div class={`line-menu half end ${bottom}`}></div>
+      </div>
       <header className="front-header">
         <Link to="/" className="link">
           <span className="front-header__landing"> Landing </span>

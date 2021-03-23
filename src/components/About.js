@@ -58,11 +58,12 @@ const About = () => {
       <main className="about-container">
         <article className="photo">
           <h1 className="title">Conóceme</h1>
-          <h1 className="subtitle">-un poquito mejor</h1>
+
           <img className="img" src={marta} />
           <div className="glow-wrap">
             <i className="glow"></i>
           </div>
+          <h2 className="subtitle">-un poquito mejor</h2>
         </article>
 
         <article className="about-container__article">

@@ -92,7 +92,7 @@ const About = () => {
               evidente su vocación.Su sólido conocimiento de UX / UI le permite
               realizar el trabajo con rapidez y calidad, tanto en equipo como de
               forma autónoma.Su personalidad divertida y positiva hace que todos
-              disfruten de su presencia. "
+              disfruten de su presencia."
             </p>
             <div className="reviews__pedro-container">
               <img className="reviews__pedro-container--img" src={pedro} />

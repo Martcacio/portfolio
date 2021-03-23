@@ -143,19 +143,19 @@
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
-        margin-top: 200px;
+        margin-top: 50px;
         margin-left: 50%;
     }
     @media all and (min-width: 1024px) {
         margin-top: 120px;
-        margin-left: 33%;
+        margin-left: 45%;
     }
 }
 
 .photo img {
     /*width: 320px;*/
     width: calc( 100vw - 60px);
-    height: 300px;
+    height: 420px;
     object-fit: cover;
     filter: grayscale(100%) contrast(120%);
     box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
@@ -361,6 +361,8 @@
     &__pedro {
         font-family: $Font-secundary;
         &--paragraph {
+            margin-left: auto;
+            margin-right: auto;
             width: 90%;
             text-align: center;
             margin-bottom: 10px;

@@ -65,7 +65,7 @@ const Front = () => {
         </Link>
       </header>
       <div id="container">
-        <div className="item">
+        {/*      <div className="item">
           <img className="content" src={folder} />
           <h2 className="content__title"> Waggin </h2>
 
@@ -86,7 +86,7 @@ const Front = () => {
               <img src="https://media.redadn.es/imagenes/pokemon-escudo-nintendo-switch_333700.jpg" />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="item">
           <a

@@ -1,6 +1,6 @@
-# Portfolio Marta Cano Palacio
+## HOLA!
 
-Este es el portfolio de mis trabajos como diseñadora UX/UI y programadora Front-end
+Este es el portfolio de mis trabajos como diseñadora UX/UI y programadora Front-end creado con React.
 
 ### UX/UI
 

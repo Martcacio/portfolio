@@ -89,10 +89,7 @@ const Front = () => {
         </div> */}
 
         <div className="item">
-          <a
-            href="http://beta.adalab.es/project-promo-l-module-2-team-3/"
-            target="_blank"
-          >
+          <a href="https://martcacio.github.io/paquita-salas/" target="_blank">
             <img className="content" src={folder} />
             <h2 className="content__title"> Paquita Salas </h2>
 
@@ -117,10 +114,7 @@ const Front = () => {
         </div>
 
         <div className="item">
-          <a
-            href="http://beta.adalab.es/modulo-3-evaluacion-intermedia-Martcacio/"
-            target="_blank"
-          >
+          <a href="https://martcacio.github.io/pokedex/" target="_blank">
             <img className="content" src={folder} />
             <h2 className="content__title"> Pokemon </h2>
 
@@ -133,7 +127,7 @@ const Front = () => {
         </div>
         <div className="item">
           <a
-            href="http://beta.adalab.es/modulo-3-evaluacion-final-Martcacio/#/"
+            href="https://martcacio.github.io/rick-and-morty/#/"
             target="_blank"
           >
             <img className="content" src={folder} />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/* import React, { useState, useEffect } from "react"; */
 import { Route, Switch } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Front from "./Front";
@@ -13,9 +13,7 @@ const App = () => {
     return (
       <>
         <figure className="background__dino">
-          <a href="#">
             <img src={dino} alt="background-dino" />
-          </a>
         </figure>
         <img className="background__dino--gif" src={dinogif} alt="gif-dino" />
         <section className="landing__title">

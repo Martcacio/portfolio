@@ -57,30 +57,21 @@ const UX = () => {
         </Link>
       </header>
       <div className="ux-container">
-        <a
-          href="https://www.behance.net/gallery/107876867/Waggin-Adopta-a-tu-mascota-ideal"
-          target="_blank"
-        >
+        <a href="https://www.behance.net/gallery/107876867/Waggin-Adopta-a-tu-mascota-ideal" target="_blank" rel="noreferrer">
           <section className="ux-container__1">
-            <img className="ux-container__1--image" src={waggin} />
-            <img className="ux-container__1--gif" src={waggingif} />
+            <img className="ux-container__1--image" src={waggin} alt="preview waggin"/>
+            <img className="ux-container__1--gif" src={waggingif} alt="preview waggin mobile"/>
           </section>
         </a>
-        <a
-          href="https://www.behance.net/gallery/107876947/Asos-redesign"
-          target="_blank"
-        >
+        <a href="https://www.behance.net/gallery/107876947/Asos-redesign" target="_blank" rel="noreferrer">
           <section className="ux-container__2">
-            <img className="ux-container__2--image" src={asos} />
+            <img className="ux-container__2--image" src={asos} alt="preview asos redesign"/>
           </section>
         </a>
-        <a
-          href="https://www.behance.net/gallery/106852865/Landing-page"
-          target="_blank"
-        >
+        <a href="https://www.behance.net/gallery/106852865/Landing-page" target="_blank" rel="noreferrer">
           <section className="ux-container__3">
-            <img className="ux-container__3--image" src={mu} />
-            <img className="ux-container__3--gif" src={mugif} />
+            <img className="ux-container__3--image" src={mu} alt="preview mu"/>
+            <img className="ux-container__3--gif" src={mugif} alt="preview mu mobile"/>
           </section>
         </a>
       </div>

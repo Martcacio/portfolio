@@ -59,7 +59,7 @@ const About = () => {
         <article className="photo">
           <h1 className="title">Conóceme</h1>
 
-          <img className="img" src={marta} />
+          <img className="img" src={marta} alt="Marta Cano"/>
           <div className="glow-wrap">
             <i className="glow"></i>
           </div>
@@ -67,8 +67,8 @@ const About = () => {
         </article>
 
         <article className="about-container__article">
-          <img className="about-container__article--photo1" src={pausa} />
-          <img className="about-container__article--photo2" src={cantabria} />
+          <img className="about-container__article--photo1" src={pausa} alt="scenery"/>
+          <img className="about-container__article--photo2" src={cantabria} alt="cantabria"/>
           <p className="about-container__article--paragraph">
             Soy una diseñadora UX/UI que se cansó de aclarar que solo diseñaba
             webs, por lo que ahora también las programo.
@@ -82,7 +82,7 @@ const About = () => {
             inflexión que me hizo reflexionar y ver que no solo quería diseñar
             webs, también programarlas
           </p>
-          <img className="about-container__article--photo3" src={grecia} />
+          <img className="about-container__article--photo3" src={grecia} alt="greece"/>
         </article>
         <div className="reviews">
           <div className="reviews__pedro">
@@ -95,7 +95,7 @@ const About = () => {
               disfruten de su presencia."
             </p>
             <div className="reviews__pedro-container">
-              <img className="reviews__pedro-container--img" src={pedro} />
+              <img className="reviews__pedro-container--img" src={pedro} alt="Pedro"/>
               <h4 className="reviews__pedro-container--name">
                 Pedro, compañero en Sngular
               </h4>
@@ -104,32 +104,16 @@ const About = () => {
         </div>
         <div className="contact">
           <div className="contact__container-icons">
-            <a
-              href="https://www.behance.net/marcticano"
-              className="contact__container-icons--icons"
-              target="_blank"
-            >
+            <a href="https://www.behance.net/marcticano" className="contact__container-icons--icons" target="_blank" rel="noreferrer">
               <i class="fab fa-behance"></i>
             </a>
-            <a
-              href="https://github.com/Martcacio"
-              className="contact__container-icons--icons"
-              target="_blank"
-            >
+            <a href="https://github.com/Martcacio" className="contact__container-icons--icons" target="_blank" rel="noreferrer">
               <i class="fab fa-github"></i>
             </a>
-            <a
-              href="https://www.linkedin.com/in/martacacio/"
-              className="contact__container-icons--icons"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/martacacio/" className="contact__container-icons--icons" target="_blank" rel="noreferrer">
               <i class="fab fa-linkedin"></i>
             </a>
-            <a
-              href="https://twitter.com/martcacio"
-              className="contact__container-icons--icons"
-              target="_blank"
-            >
+            <a href="https://twitter.com/martcacio" className="contact__container-icons--icons" target="_blank" rel="noreferrer">
               <i class="fab fa-twitter"></i>
             </a>
           </div>

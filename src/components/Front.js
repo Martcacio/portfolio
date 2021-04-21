@@ -10,9 +10,11 @@ import PS2 from "../images/front/PS2.png";
 import PS3 from "../images/front/PS3.png";
 import PS4 from "../images/front/PS4.png";
 import PS5 from "../images/front/PS5.png";
-import s1 from "../images/front/s1.png";
-import s2 from "../images/front/s2.png";
-import s3 from "../images/front/s3.png";
+import w1 from "../images/front/w1.png";
+import w2 from "../images/front/w2.png";
+import w3 from "../images/front/w3.png";
+import w4 from "../images/front/w4.png";
+import w5 from "../images/front/w5.png";
 import folder from "../images/front/folder.png";
 import React, { useState } from "react";
 
@@ -65,108 +67,86 @@ const Front = () => {
         </Link>
       </header>
       <div id="container">
-        {/*      <div className="item">
-          <img className="content" src={folder} />
+        <div className="item">
+        <a href="https://martcacio.github.io/waggin/#/" target="_blank" rel="noreferrer">
+          <img className="content" src={folder} alt="folder waggin"/>
           <h2 className="content__title"> Waggin </h2>
 
           <div className="previews">
             <div className="preview-image">
-              <img src="https://cdn.mos.cms.futurecdn.net/raYa9qNMVG8wDY4L3qp9c8.jpg" />
+            <img src={w1} alt="preview waggin 1"/>
             </div>
             <div className="preview-image">
-              <img src="https://www.popphoto.com/sites/popphoto.com/files/styles/1000_1x_/public/images/2018/07/00-otherworldly-national-park.jpg?itok=1bxhktRC&fc=50,50" />
+            <img src={w2} alt="preview waggin 2"/>            
             </div>
             <div className="preview-image">
-              <img src="https://www.adorama.com/alc/wp-content/uploads/2016/07/americanwest-mezz-1024x576.jpg" />
+            <img src={w3} alt="preview waggin 3"/>            
             </div>
             <div className="preview-image">
-              <img src="https://www.nationalgeographic.com/content/dam/photography/photos/000/675/67547.ngsversion.1467941445762.adapt.1900.1.jpg" />
+            <img src={w4} alt="preview waggin 4"/>            
             </div>
             <div className="preview-image">
-              <img src="https://media.redadn.es/imagenes/pokemon-escudo-nintendo-switch_333700.jpg" />
+            <img src={w5} alt="preview waggin 5"/>            
             </div>
           </div>
-        </div> */}
+          </a>
+        </div> 
 
         <div className="item">
-          <a href="https://martcacio.github.io/paquita-salas/" target="_blank">
-            <img className="content" src={folder} />
+          <a href="https://martcacio.github.io/paquita-salas/" target="_blank" rel="noreferrer">
+            <img className="content" src={folder} alt="folder paquita salas"/>
             <h2 className="content__title"> Paquita Salas </h2>
 
             <div className="previews">
               <div className="preview-image">
-                <img src={PS1} />
+                <img src={PS1} alt="preview paquita salas 1"/>
               </div>
               <div className="preview-image">
-                <img src={PS2} />
+                <img src={PS2} alt="preview paquita salas 2"/>
               </div>
               <div className="preview-image">
-                <img src={PS3} />
+                <img src={PS3} alt="preview paquita salas 3"/>
               </div>
               <div className="preview-image">
-                <img src={PS4} />
+                <img src={PS4} alt="preview paquita salas 4"/>
               </div>
               <div className="preview-image">
-                <img src={PS5} />
+                <img src={PS5} alt="preview paquita salas 5"/>
               </div>
             </div>
           </a>
         </div>
 
         <div className="item">
-          <a href="https://martcacio.github.io/pokedex/" target="_blank">
-            <img className="content" src={folder} />
+          <a href="https://martcacio.github.io/pokedex/" target="_blank" rel="noreferrer">
+            <img className="content" src={folder} alt="folder pokedex"/>
             <h2 className="content__title"> Pokemon </h2>
 
             <div className="previews">
               <div className="preview-image">
-                <img src={pokemon} />
+                <img src={pokemon} alt="preview pokemon"/>
               </div>
             </div>
           </a>
         </div>
         <div className="item">
-          <a
-            href="https://martcacio.github.io/rick-and-morty/#/"
-            target="_blank"
-          >
-            <img className="content" src={folder} />
+          <a href="https://martcacio.github.io/rick-and-morty/#/" target="_blank" rel="noreferrer">
+            <img className="content" src={folder} alt="folder rick y morty"/>
             <h2 className="content__title"> Rick y Morty </h2>
 
             <div className="previews">
               <div className="preview-image">
-                <img src={rm1} />
+                <img src={rm1} alt="preview rick y morty 1"/>
               </div>
               <div className="preview-image">
-                <img src={rm3} />
+                <img src={rm3} alt="preview rick y morty 2"/>
               </div>
               <div className="preview-image">
-                <img src={rm4} />
+                <img src={rm4} alt="preview rick y morty 3"/>
               </div>
 
               <div className="preview-image">
-                <img src={rm2} />
-              </div>
-            </div>
-          </a>
-        </div>
-        <div className="item">
-          <a
-            href="http://beta.adalab.es/modulo-2-evaluacion-final-Martcacio/"
-            target="_blank"
-          >
-            <img className="content" src={folder} />
-            <h2 className="content__title"> Series </h2>
-
-            <div className="previews">
-              <div className="preview-image">
-                <img src={s1} />
-              </div>
-              <div className="preview-image">
-                <img src={s2} />
-              </div>
-              <div className="preview-image">
-                <img src={s3} />
+                <img src={rm2} alt="preview rick y morty 4"/>
               </div>
             </div>
           </a>
